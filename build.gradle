@@ -32,7 +32,7 @@ ext {
 
 //    第三方版本
 
-    SUPPORT_VERSION = '25.2.0'
+    SUPPORT_VERSION = '25.3.1'
     DAGGER_VERSION = '2.10'
     RETROFIT_VERSION = '2.2.0'
     OKHTTP_VERSION = '3.4.2'

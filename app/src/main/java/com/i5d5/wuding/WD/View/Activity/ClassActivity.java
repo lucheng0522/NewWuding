@@ -7,14 +7,15 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Button;
 
-//import com.i5d5.testmodule.TEST.View.Activity.SecendActivity;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.i5d5.basemodule.Utils.RxBus;
 import com.i5d5.basemodule.Utils.SPUtils;
 import com.i5d5.testmodule.TEST.View.Activity.SecendActivity;
 import com.i5d5.wuding.MDI.MComponent.WdClassComponent;
 import com.i5d5.wuding.MDI.MModule.ClassModule;
 import com.i5d5.wuding.R;
+import com.i5d5.wuding.WD.Model.RXsign;
 import com.i5d5.wuding.WD.Presenter.ClassPresenter;
 
 import javax.inject.Inject;
@@ -23,7 +24,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import retrofit2.Retrofit;
-import retrofit2.http.Path;
 
 /**
  * class_name: ClassActivity
@@ -58,6 +58,12 @@ public class ClassActivity extends WdBaseActivity implements ClassPresenter.Clas
         Log.d("luchengs", spUtils.toString() + "+++++class");
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        classPresenter.detachView();
+    }
+
     public static void startClassActivity(Activity activity) {
         ARouter.getInstance().build("/main/class").navigation(activity);
 
@@ -87,6 +93,8 @@ public class ClassActivity extends WdBaseActivity implements ClassPresenter.Clas
     public void onViewClicked() {
         Intent intent = new Intent(ClassActivity.this, SecendActivity.class);
         startActivity(intent);
+        RxBus.getDefault().post(new RXsign());
+
 
     }
 }

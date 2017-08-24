@@ -31,6 +31,7 @@ public class RxSchedulers {
                             @Override
                             public void accept(Disposable disposable) throws Exception {
                                 Log.d("luchengs", Looper.getMainLooper() + "正确的");
+//                                mvpView.showDialog();
                             }
                         })
                         .subscribeOn(AndroidSchedulers.mainThread())

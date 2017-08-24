@@ -39,6 +39,12 @@ public class WdBaseApplication extends MultiDexApplication {
 
     }
 
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
+
     public static WdBaseApplication get(Context context) {
         return (WdBaseApplication) context.getApplicationContext();
     }

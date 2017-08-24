@@ -31,7 +31,6 @@ import retrofit2.Response;
 public class ClassPresenter extends BasePresenter<ClassPresenter.ClassMvpView> {
     private ClassApi classApi;
 //    private CompositeDisposable compositeDisposable;
-
     @Inject
     public ClassPresenter(ClassApi classApi) {
         this.classApi = classApi;
@@ -58,6 +57,7 @@ public class ClassPresenter extends BasePresenter<ClassPresenter.ClassMvpView> {
                     @Override
                     public void onWdNext(Response<ClassRootModel> classRootModelResponse) {
                         Log.d("luchengs", classRootModelResponse.code() + "是否成功");
+                        classRootModelResponse.body();
                     }
 
                     @Override

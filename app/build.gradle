@@ -44,12 +44,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
-    testCompile 'junit:junit:4.12'
     compile project(':basemodule')
     compile project(':testmodule')
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.DAGGER_VERSION"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.BUTTERNIFE_VERSION"
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.AROUNTER_ANNOTATION"
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    testCompile 'junit:junit:4.12'
 }

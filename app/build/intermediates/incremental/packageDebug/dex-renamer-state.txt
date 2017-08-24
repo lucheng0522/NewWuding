@@ -1,0 +1,7 @@
+#Thu Aug 24 11:59:06 CST 2017
+base.0=H\:\\studioworkspace\\NewWuding\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3bbc954a68096b1d0e6175316cc458afc4c013d2
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=H\:\\studioworkspace\\NewWuding\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_21ef0814eb590acfb397041ad957b79b31e68617\\classes.dex
+base.1=H\:\\studioworkspace\\NewWuding\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_21ef0814eb590acfb397041ad957b79b31e68617
+file.0=H\:\\studioworkspace\\NewWuding\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3bbc954a68096b1d0e6175316cc458afc4c013d2\\classes.dex

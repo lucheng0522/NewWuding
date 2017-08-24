@@ -23,8 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".WD.View.Activity.ClassActivity"></activity>
+        <activity android:name=".WD.View.Activity.ClassActivity" />
         <activity android:name=".WD.View.Activity.SchemeFilterActivity">
 
             <!-- Schame -->
@@ -54,6 +53,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
+        <activity android:name=".WD.View.Activity.TestActivity"></activity>
     </application>
 
 </manifest>
